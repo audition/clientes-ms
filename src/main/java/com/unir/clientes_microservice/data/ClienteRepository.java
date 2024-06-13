@@ -1,7 +1,8 @@
 package com.unir.clientes_microservice.data;
 
-import com.unir.products.model.pojo.Cliente;
 
+
+import com.unir.clientes_microservice.model.pojo.Cliente;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Repository;
 

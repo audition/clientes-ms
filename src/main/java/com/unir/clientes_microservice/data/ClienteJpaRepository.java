@@ -1,6 +1,7 @@
 package com.unir.clientes_microservice.data;
 
-import com.unir.products.model.pojo.Cliente;
+
+import com.unir.clientes_microservice.model.pojo.Cliente;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 

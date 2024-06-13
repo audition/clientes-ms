@@ -1,19 +1,16 @@
 package com.unir.clientes_microservice.controller;
-import java.util.Collections;
-import java.util.List;
-import java.util.Map;
-
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.tags.Tag;
+
+import com.unir.clientes_microservice.model.pojo.Cliente;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import com.unir.products.model.pojo.Product;
-import com.unir.products.service.ProductsService;
+import com.unir.clientes_microservice.service.ClientesService;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -40,31 +37,14 @@ public class ClientesController {
     public ResponseEntity<Cliente> getClientes(@PathVariable String clienteId) {
 
         log.info("Request received for cliente {}", clienteId);
-        Cliente cliente = service.getCliente(clienteId);
+        Cliente cliente = service.getById(clienteId);
 
         if (cliente != null) {
             return ResponseEntity.ok(cliente);
         } else {
-            return ResponseEntity.notFound().build();
+            return  ResponseEntity.notFound().build();
         }
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 }
