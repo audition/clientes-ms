@@ -28,7 +28,7 @@ public class ClientesController {
     @Operation(
             operationId = "Obtener un cliente",
             description = "Operacion de lectura",
-            summary = "Se devuelve un producto a partir de su identificador.")
+            summary = "Se devuelve un cliente a partir de su identificador.")
     @ApiResponse(
             responseCode = "200",
             content = @Content(mediaType = "application/json", schema = @Schema(implementation = Cliente.class)))
