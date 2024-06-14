@@ -18,7 +18,7 @@ public class CreateClienteRequest {
     private String genero;
     private Integer altura;
     private Integer peso;
-    private Integer nivelActividad;
+    private Integer nivelactividad;
     private String objetivo;
 
 }

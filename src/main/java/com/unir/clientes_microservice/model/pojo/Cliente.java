@@ -55,8 +55,8 @@ public class Cliente {
     @Column(name = "peso")
     private Integer peso;
 
-    @Column(name = "nivelActividad")
-    private Integer nivelActividad;
+    @Column(name = "nivelactividad")
+    private Integer nivelactividad;
 
     @Column(name = "objetivo")
     private String objetivo;
@@ -67,7 +67,7 @@ public class Cliente {
         this.genero = clienteDto.getGenero();
         this.altura = clienteDto.getAltura();
         this.peso = clienteDto.getPeso();
-        this.nivelActividad = clienteDto.getNivelActividad();
+        this.nivelactividad = clienteDto.getNivelActividad();
         this.objetivo = clienteDto.getObjetivo();
         this.id = clienteDto.getId();
     }
